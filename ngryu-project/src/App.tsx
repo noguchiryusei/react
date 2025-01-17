@@ -33,8 +33,7 @@ const styles: { [key: string]: React.CSSProperties } = {
   container: {
     fontFamily: 'Arial, sans-serif',
     textAlign: 'center',
-    maxWidth: '600px',
-    margin: '0 auto',
+    width: '100%',
     padding: '10px',
     backgroundColor: '#f5f5f5',
     height: '100vh',
