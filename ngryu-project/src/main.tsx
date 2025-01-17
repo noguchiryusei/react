@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
 
-const App = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const App: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -14,15 +13,15 @@ const App = () => {
         <button style={styles.icon} onClick={toggleMenu}>
           ☰
         </button>
-        <h1 style={styles.title}>らるめちゃん</h1>
+        <h1 style={styles.title}>My App</h1>
       </header>
-      <main style={styles.main}>ここに何が入るんだろうね</main>
+      <main style={styles.main}>メインコンテンツエリア</main>
       {menuOpen && (
         <div style={styles.menu}>
-          <ul>
-            <li><a href="https://www.mcdonalds.co.jp/">マクドナルドは</a></li>
-            <li>おやつに</li>
-            <li>含まれますか</li>
+          <ul style={styles.menuList}>
+            <li>メニュー1</li>
+            <li>メニュー2</li>
+            <li>メニュー3</li>
           </ul>
         </div>
       )}
@@ -30,14 +29,16 @@ const App = () => {
   );
 };
 
-const styles = {
+const styles: { [key: string]: React.CSSProperties } = {
   container: {
     fontFamily: 'Arial, sans-serif',
     textAlign: 'center',
     maxWidth: '600px',
     margin: '0 auto',
     padding: '10px',
-    backgroundColor: '#f5f5f5'
+    backgroundColor: '#f5f5f5',
+    height: '100vh',
+    overflow: 'hidden'
   },
   header: {
     display: 'flex',
@@ -73,7 +74,11 @@ const styles = {
     textAlign: 'left',
     padding: '10px',
     boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)'
+  },
+  menuList: {
+    listStyle: 'none',
+    padding: '0'
   }
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default App;
