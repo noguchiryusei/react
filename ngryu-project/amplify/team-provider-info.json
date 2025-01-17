@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-athome-dev-fd5f6-authRole",
+      "UnauthRoleArn": "arn:aws:iam::339712903985:role/amplify-athome-dev-fd5f6-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::339712903985:role/amplify-athome-dev-fd5f6-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-athome-dev-fd5f6-deployment",
+      "UnauthRoleName": "amplify-athome-dev-fd5f6-unauthRole",
+      "StackName": "amplify-athome-dev-fd5f6",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:339712903985:stack/amplify-athome-dev-fd5f6/90746fe0-d48a-11ef-9883-06d1ca67f667",
+      "AmplifyAppId": "doqtbuav81vim"
+    }
+  }
+}
