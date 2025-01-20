@@ -1,39 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import { Amplify } from 'aws-amplify';
-import awsExports from './aws-exports.js';
+import awsExports from './aws-exports.js'; // AWS Amplifyの設定ファイル
 Amplify.configure(awsExports);
-import { withAuthenticator } from '@aws-amplify/ui-react';
+
+import { Authenticator } from '@aws-amplify/ui-react';
 
 const App: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState<boolean>(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <div className="container">
-      <header className="header">
-        <button className="icon" onClick={toggleMenu}>
-          ☰
-        </button>
-        <h1 className="title">らるめちゃん</h1>
-      </header>
-      <main className="main">ここにランキング</main>
-      <main className="main">ここにランキング</main>
-      <main className="main">ここにランキング</main>
-      {menuOpen && (
-        <div className="menu">
-          <ul className="menuList">
-            <li>メニュー1</li>
-            <li>メニュー2</li>
-            <li>メニュー3</li>
-          </ul>
-        </div>
-      )}
+      Welcome to the app!
     </div>
   );
 };
 
-export default withAuthenticator(App);
+const AppWithAuth: React.FC = () => (
+  <Authenticator hideSignUp={true}> 
+    {({ signOut, user }) => (
+      <div>
+        <App />
+        <div style={{ marginTop: '20px' }}>
+          <button onClick={signOut}>Sign out</button> {/* Sign outボタンの設置 */}
+        </div>
+        <div>
+          Logged in as: {user.username} {/* 現在のユーザー名を表示 */}
+        </div>
+      </div>
+    )}
+  </Authenticator>
+);
+
+export default AppWithAuth;
