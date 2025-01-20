@@ -23,7 +23,7 @@ const AppWithAuth: React.FC = () => (
           <button onClick={signOut}>Sign out</button> {/* Sign outボタンの設置 */}
         </div>
         <div>
-          Logged in as: {user.username} {/* 現在のユーザー名を表示 */}
+          {user ? `Logged in as: ${user.username}` : 'Loading...'} 
         </div>
       </div>
     )}
