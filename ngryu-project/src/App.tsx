@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
+import { Amplify } from 'aws-amplify';
+import awsExports from './aws-exports.js';
+Amplify.configure(awsExports);
+import { withAuthenticator } from '@aws-amplify/ui-react';
 
 const App: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -32,4 +36,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);
