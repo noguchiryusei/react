@@ -10,6 +10,11 @@
       "StackName": "amplify-athome-dev-fd5f6",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:339712903985:stack/amplify-athome-dev-fd5f6/90746fe0-d48a-11ef-9883-06d1ca67f667",
       "AmplifyAppId": "doqtbuav81vim"
+    },
+    "categories": {
+      "auth": {
+        "athome73ae3653": {}
+      }
     }
   }
 }
