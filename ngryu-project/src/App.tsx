@@ -19,7 +19,7 @@ const AppWithAuth: React.FC = () => (
     {({ signOut, user }) => (
       <div>
         <App />
-        <div style={{ marginTop: '20px' }}>
+        <div>
           <button onClick={signOut}>Sign out</button> {/* Sign outボタンの設置 */}
         </div>
         <div>
