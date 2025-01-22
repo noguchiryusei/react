@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Amplify } from 'aws-amplify';
-import awsExports from './aws-exports.js'; // AWS Amplifyの設定ファイル
+import awsExports from './pages/aws-exports.js'; // AWS Amplifyの設定ファイル
 Amplify.configure(awsExports);
 
 import { Authenticator } from '@aws-amplify/ui-react';

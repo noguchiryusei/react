@@ -1,0 +1,50 @@
+.footer {
+  position: fixed; /* フッターを画面下に固定 */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* 幅を100%に設定して左右端まで広げる */
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* フッターの陰影を追加 */
+  z-index: 1000; /* 他の要素よりも前面に表示されるように */
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-button:hover {
+  color: #007bff;
+}
+
+.footer-auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signout-button {
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.signout-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
