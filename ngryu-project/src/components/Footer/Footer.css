@@ -1,26 +1,29 @@
 .footer {
-  position: fixed; /* フッターを画面下に固定 */
+  position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%; /* 幅を100%に設定して左右端まで広げる */
+  width: 100%;
+  max-width: 430px; /* iPhone 14の最大幅を考慮 */
+  margin: 0 auto; /* 水平中央に配置 */
   display: flex;
   justify-content: space-between;
   background-color: #f8f9fa;
-  padding: 10px 20px;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* フッターの陰影を追加 */
-  z-index: 1000; /* 他の要素よりも前面に表示されるように */
+  padding: 10px 15px; /* パディングを少し調整 */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-.footer-icons {
+.footer-icons,
+.footer-auth {
   display: flex;
-  gap: 10px;
+  gap: 8px; /* ギャップを調整 */
 }
 
 .footer-button {
   background: none;
   border: none;
   color: #333;
-  font-size: 24px;
+  font-size: 22px; /* アイコンサイズを微調整 */
   cursor: pointer;
   transition: color 0.3s;
 }
@@ -29,17 +32,11 @@
   color: #007bff;
 }
 
-.footer-auth {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 .signout-button {
   background-color: transparent;
   border: 1px solid #333;
   color: #333;
-  padding: 5px 10px;
+  padding: 4px 8px; /* パディングを微調整 */
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }

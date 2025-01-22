@@ -4,14 +4,14 @@ import awsExports from '../../pages/aws-exports.js';
 Amplify.configure(awsExports);
 
 import { Authenticator } from '@aws-amplify/ui-react';
-import { FaCalendar, FaSearch, FaStar, FaUser } from 'react-icons/fa';
+import { FaCalendar, FaSearch, FaStar, FaUser, FaSignOutAlt } from 'react-icons/fa';
 
 import './Footer.css'; // CSSファイルをインポート
 
 const Footer: React.FC = () => {
   return (
     <Authenticator hideSignUp={true}> 
-      {({ signOut, user }) => (
+      {({ signOut }) => (
         <footer className="footer">
           <div className="footer-icons">
             <button className="footer-button">
@@ -26,10 +26,9 @@ const Footer: React.FC = () => {
             <button className="footer-button">
               <FaUser />
             </button>
-          </div>
-          <div className="footer-auth">
-            <button onClick={signOut} className="signout-button">Sign out</button>
-            {user ? <span>Logged in as: {user.username}</span> : 'Loading...'}
+            <button onClick={signOut} className="footer-button">
+              <FaSignOutAlt />
+            </button>
           </div>
         </footer>
       )}
