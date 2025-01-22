@@ -50,11 +50,12 @@ button:focus-visible {
     font-size: 20px;
   }
 
-  .footer {
+  /* .footer {
     padding: 10px;
     flex-direction: column; /* 小さい画面では縦方向にアイテムを並べる */
-    align-items: center;
-  }
+    /* align-items: center; */
+  /* }  */
+  
 
   .footer-icons {
     margin-bottom: 10px;
