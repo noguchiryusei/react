@@ -5,7 +5,7 @@ import './index.css';
 import { Authenticator } from '@aws-amplify/ui-react';
 import { Amplify } from 'aws-amplify';
 import awsExports from './aws-exports.js'; // パスは正確に
-import { signOut } from "aws-amplify/auth"
+
 Amplify.configure(awsExports);
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       {({ signOut }) => (
         <div className="app">
           <h2>へっだー</h2>
-          {<Footer signOut={signOut} />} 
+          <Footer signOut={signOut ?? (() => {})} /> 
         </div>
       )}
     </Authenticator>
