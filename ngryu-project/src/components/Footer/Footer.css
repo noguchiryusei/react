@@ -3,7 +3,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  max-width: 430px; /* iPhone 14の最大幅を考慮 */
+  max-width: 390px; /* iPhone 14の最大幅を考慮 */
   margin: 0 auto; /* 水平中央に配置 */
   display: flex;
   justify-content: space-between;
