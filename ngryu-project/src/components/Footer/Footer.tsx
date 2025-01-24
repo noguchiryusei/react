@@ -1,6 +1,6 @@
 import React from 'react';
 import { Amplify } from 'aws-amplify';
-import awsExports from '../../pages/aws-exports.js';
+import awsExports from '../../pages/aws-exports';
 Amplify.configure(awsExports);
 
 import { FaCalendar, FaSearch, FaStar, FaUser, FaSignOutAlt } from 'react-icons/fa';
@@ -9,22 +9,23 @@ import './Footer.css';
 
 interface FooterProps {
   signOut: () => void;
+  onSelectPage: (page: string) => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ signOut }) => {
+const Footer: React.FC<FooterProps> = ({ signOut, onSelectPage }) => {
   return (
     <footer className="footer">
       <div className="footer-icons">
-        <button className="footer-button">
+        <button className="footer-button" onClick={() => onSelectPage('calendar')}>
           <FaCalendar />
         </button>
-        <button className="footer-button">
+        <button className="footer-button" onClick={() => onSelectPage('search')}>
           <FaSearch />
         </button>
-        <button className="footer-button">
+        <button className="footer-button" onClick={() => onSelectPage('star')}>
           <FaStar />
         </button>
-        <button className="footer-button">
+        <button className="footer-button" onClick={() => onSelectPage('user')}>
           <FaUser />
         </button>
         <button onClick={() => signOut && signOut()} className="footer-button">

@@ -1,2 +1,2 @@
 FROM node:latest
-WORKDIR /app
+WORKDIR /app/ngryu-project
