@@ -1,0 +1,36 @@
+.calendar-container {
+  max-width: 375px;
+  margin-left: 0;
+  padding: 10px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-header {
+  text-align: center;
+}
+
+.calendar-table th, .calendar-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.red-text {
+  color: red;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.black-text {
+  color: black;
+}
+
+.small-text {
+  font-size: 0.8em;
+}
