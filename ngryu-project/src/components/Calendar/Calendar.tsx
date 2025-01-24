@@ -69,7 +69,7 @@ const Calendar: React.FC<CalendarProps> = ({ month, year, events }) => {
   return (
     <div className="calendar-container">
       <h2 className="calendar-header">{year}年 {month + 1}月</h2>
-      <table className="calendar-table">
+      <table className="calendar-table black-text">
         <thead>
           <tr>
             <th className="red-text">日</th>
