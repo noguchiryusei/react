@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "athome",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 0,
+      "apiKeyExpirationDate": "2025-01-31T02:47:02.311Z",
+      "keyDescription": "athome-api-key"
+    },
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "AUTOMERGE"
+      }
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "API_KEY",
+        "expirationTime": 7,
+        "apiKeyExpirationDate": "2025-02-07T02:47:24.787Z",
+        "keyDescription": ""
+      }
+    ]
+  }
+}

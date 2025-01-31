@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "athome",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2025-01-27T23:51:28.522Z"
+}

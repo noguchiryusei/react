@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "athome73ae3653": {}
+      },
+      "api": {
+        "athome": {}
+      },
+      "storage": {
+        "s32d5ac2c0": {}
       }
     }
   }

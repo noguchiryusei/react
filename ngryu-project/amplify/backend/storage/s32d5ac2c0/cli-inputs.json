@@ -1,0 +1,14 @@
+{
+  "resourceName": "s32d5ac2c0",
+  "policyUUID": "2d5ac2c0",
+  "bucketName": "athome59a219d477fb4ecfbc26e3cc44d40527",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

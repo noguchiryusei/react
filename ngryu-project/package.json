@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@aws-amplify/ui-react": "^6.9.0",
-    "aws-amplify": "^6.12.1",
+    "@aws-amplify/api-graphql": "^4.7.2",
+    "@aws-amplify/ui-react": "^6.9.1",
+    "amplify": "^0.0.11",
+    "aws-amplify": "^6.12.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "vim": "^0.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

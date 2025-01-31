@@ -48,3 +48,14 @@ amplify push
     ]
 }
 ```
+
+## API設定
+amplify configure
+amplify init
+amplify add api
+amplify add storage
+amplify push
+
+## importの時の注意！
+import { API } from 'aws-amplify';
+import { graphqlOperation } from '@aws-amplify/api-graphql';
