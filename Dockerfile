@@ -8,7 +8,6 @@ RUN ./aws/install
 
 WORKDIR /app/ngryu-project
 RUN npm install -g npm@11.1.0
-RUN npm install
 
 RUN npm install @aws-amplify/ui-react
 RUN npm install -g npm@latest
@@ -18,5 +17,6 @@ RUN npm install -g aws-cli
 
 
 COPY . .
+RUN npm install
 
 CMD ["npm", "run", "dev", "--", "--host"]

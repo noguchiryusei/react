@@ -1,33 +1,28 @@
-import React from 'react';
-import './App.css';
-import { Amplify } from 'aws-amplify';
-import awsExports from './pages/aws-exports.js'; // AWS Amplifyの設定ファイル
-Amplify.configure(awsExports);
+// // import logo from "../logo.svg";
+// import "@aws-amplify/ui-react/styles.css";
+// import {
+//   withAuthenticator,
+//   Button,
+//   Heading,
+//   Image,
+//   View,
+//   Card,
+// } from "@aws-amplify/ui-react";
+// interface AppProps {
+//   signOut?: (data?: any) => void;
+// }
 
-import { Authenticator } from '@aws-amplify/ui-react';
 
-const App: React.FC = () => {
-  return (
-    <div className="container">
-      Welcome to the app!
-    </div>
-  );
-};
+// function App({ signOut }) {
+//   return (
+//     <View className="App">
+//       <Card>
+//         {/* <Image src={logo} className="App-logo" alt="logo" /> */}
+//         <Heading level={1}>We now have Auth!</Heading>
+//       </Card>
+//       <Button onClick={signOut}>Sign Out</Button>
+//     </View>
+//   );
+// }
 
-const AppWithAuth: React.FC = () => (
-  <Authenticator hideSignUp={true}> 
-    {({ signOut, user }) => (
-      <div>
-        <App />
-        <div>
-          <button onClick={signOut}>Sign out</button> {/* Sign outボタンの設置 */}
-        </div>
-        <div>
-          {user ? `Logged in as: ${user.username}` : 'Loading...'} 
-        </div>
-      </div>
-    )}
-  </Authenticator>
-);
-
-export default AppWithAuth;
+// export default withAuthenticator(App);

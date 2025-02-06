@@ -13,7 +13,12 @@
     },
     "categories": {
       "auth": {
-        "athome73ae3653": {}
+        "athome3ca15aaf": {},
+        "athome73ae3653": {},
+        "userPoolGroups": {}
+      },
+      "api": {
+        "athome": {}
       }
     }
   }
